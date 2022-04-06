@@ -41,7 +41,7 @@
                         <a class="nav-link active" href="#"><b>Shop</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><b>Blog</b></a>
+                        <a class="nav-link active" href="{% url 'blogs:blog_list' %}"><b>Blog</b></a>
                     </li>
                     <li class="nav-item mx-5">
                         <a class="nav-link active" href="#"><b>Contacts</b></a>
@@ -120,10 +120,10 @@
                     <h5><a href="#" class="template-footer">Templateshub</a></h5>
                 </div>
                 <div class="footer-icon col-md-6">
-                    <img class="img-icon-footer mx-2" src="./img/Instagram.svg">
-                    <img class="img-icon-footer mx-2" src="./img/facebook.svg">
-                    <img class="img-icon-footer mx-2" src="./img/twitter.svg">
-                    <img class="img-icon-footer mx-2" src="./img/you_tube.svg">
+                    <img class="img-icon-footer mx-2" src="{% static 'img/Instagram.svg' %}">
+                    <img class="img-icon-footer mx-2" src="{% static 'img/facebook.svg' %}">
+                    <img class="img-icon-footer mx-2" src="{% static 'img/twitter.svg' %}">
+                    <img class="img-icon-footer mx-2" src="{% static 'img/you_tube.svg' %}">
                 </div>
             </div>
         </div>

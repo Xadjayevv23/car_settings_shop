@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ==OPEN== ==OPEN==  OUR BLOG POST SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <div class="our-blog-img">
+        <div class="our-blog-posts-title position-relative">
+            <img class="w-100 h-50" src="{% static 'img/slider-thumb-full-2.jpg' %}">
+            <h1 class="blog-title position-absolute">Our Blog</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            {% for post in posts %}
+                <div class="blog-col col-lg-3 col-md-6 col-sm-6 my-5 mx-3">
+                    <div class="our-blog-post my-4">
+                        <div class="our-blog-post-imag d-flex justify-content-center">
+                            <img class="our-blog-post-img" src="{{ post.main_image.url }}">
+                        </div>
+                        <div class="our-blog-post-text w-100 text-center">
+                            <p class="our-blog-post-data w-100 my-2">{{ post.created_at }}Agust 17, 09:14 am</p>
+                            <h4 class="our-blog-post-title w-100">{{ post.title }}</h4>
+                            <p class="our-blog-post-description px-3">
+                                Using Lorem Ipsum allows designers to put together layouts
+                                and the form content</p>
+                            <hr style="width: 75%; margin-left: 12%">
+                            <a href="#" class="our-blog-post-btn w-100 my-5">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            <nav aria-label="Page navigation example">
+                <ul class="pagination d-flex justify-content-center mb-5">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- ==CLOSE== ==CLOSE==  OUR BLOG POST SELECT END  ==CLOSE== ==CLOSE== -->
+{% endblock %}
