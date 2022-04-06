@@ -2055,8 +2055,13 @@
     text-align: center;
 }
 
+.our-blog-post-image {
+    width: 100%;
+}
+
 .our-blog-post-img {
     width: 100%;
+    height: 250px;
 }
 
 .blog-col {

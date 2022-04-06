@@ -5,5 +5,5 @@ from .models import BlogPostModel
 
 class BlogListView(ListView):
     model = BlogPostModel
-    template_name = 'main/blog_list.html'
+    template_name = "main/blog_list.html"
     context_object_name = 'posts'
