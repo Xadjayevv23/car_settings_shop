@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==OPEN== ==OPEN==  META TAGS SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==CLOSE== ==CLOSE==  META TAGS SELECT END  ==CLOSE== ==CLOSE== -->
+
+    <title>Title</title>
+
+    <!-- ==OPEN== ==OPEN==  CSS LINK STYL SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+    <!-- ==OPEN== ==OPEN==  CSS LINK STYL SELECT END  ==CLOSE== ==CLOSE== -->
+
+</head>
+<body>
+
+<!-- ==OPEN== ==OPEN==  NAVBAR SELECT BEGIN  ==OPEN== ==OPEN== -->
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="mx-4" src="{% static 'img/logo.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active" href="#"><b>Shop</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><b>Blog</b></a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active" href="#"><b>Contacts</b></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- ==CLOSE== ==CLOSE==  NAVBAR SELECT END  ==CLOSE== ==CLOSE== -->
+
+
+
+    {% block content %}
+
+    {% endblock %}
+
+<!--==OPEN== ==OPEN==  FOOTER POST SELECT BEGIN  ==OPEN== ==OPEN== -->
+<div class="container-fluid footer h-50">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-5">
+            <div class="">
+                <img class="footer-img" src={% static 'img/logo-light.png' %}>
+                <ul class="">
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">45 Grand Central Terminal New
+                        York,NY 1017 United
+                        State USA</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">(+123) 456 789 - (+123) 666
+                        888</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Contact@yourcompany.com</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Mon-Sat 9:00pm - 5:00pm Sun :
+                        Closed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 my-5">
+            <div class="">
+                <h4 class="footer-title">QUICK MENU</h4>
+                <ul class="text-white">
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">New arrivals</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Life style</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Interior</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Wheels</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Lighting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 my-5">
+            <div class="">
+                <h4 class="footer-title">INFORMATION</h4>
+                <ul class="text-white">
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">FAQs</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Track Order</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Delivery</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Wheels</a></li>
+                    <li class="footer-text my-4 w-100"><a class="footer-text" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 my-5">
+            <div class="">
+                <h4 class="footer-title">NEWSLETTER</h4>
+                <ul class="text-white">
+                    <li class="footer-text my-4 w-75">Get notified of new products, limited releases, and more.</li>
+                    <li class="footer-text my-4 w-75">Cart shop</li>
+                    <li class="footer-text my-4 w-75">Blog post</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="width: 80.2%; background-color: white">
+        <div class="container">
+            <div class="row template d-flex justify-content-center align-content-center text-center mb-3">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <h5><a href="#" class="template-footer">Templateshub</a></h5>
+                </div>
+                <div class="footer-icon col-md-6">
+                    <img class="img-icon-footer mx-2" src="./img/Instagram.svg">
+                    <img class="img-icon-footer mx-2" src="./img/facebook.svg">
+                    <img class="img-icon-footer mx-2" src="./img/twitter.svg">
+                    <img class="img-icon-footer mx-2" src="./img/you_tube.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==CLOSE== ==CLOSE==  FOOTER POST SELECT END  ==CLOSE== ==CLOSE== -->
+
+
+<!-- ==OPEN== ==OPEN==  JS SCRIPT STYL SELECT BEGIN  ==OPEN== ==OPEN== -->
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'slick-1.8.1/slick/slick.min.js' %}"></script>
+<script src="{% static 'js/styl.js' %}"></script>
+<!-- ==CLOSE== ==CLOSE==  JS SCRIPT STYL SELECT END  ==CLOSE== ==CLOSE== -->
+
+</body>
+</html>
