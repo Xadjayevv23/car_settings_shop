@@ -34,7 +34,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12">
                     <div class="blog-details-pictures d-flex justify-content-center">
-                        <img class="blog_us-details-img h-50" src="{{ post.banner.url }}" alt="{{ post.title }}">
+                        <img class="blog_us-details-img img-fluid" src="{{ post.banner.url }}" alt="{{ post.title }}">
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-content-center">
@@ -78,7 +78,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="blog__details__author d-flex my-4 w-100 justify-content-around">
                                         <div class="blog__details__author__pic">
-                                            <img class="blog-author-avatar h-100" src="../img/blog-author.jpg" alt="">
+                                            <img class="blog-author-avatar h-100" src="{{ post.author.avatar.url }}" alt="">
                                         </div>
                                         <div class="blog__details__author__text my-2">
                                             <h5 class="blog-author-full_name pt-2">
@@ -89,7 +89,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-end">
                                     <div class="blog__details__tags my-4 py-1 mx-4 px-2">
-                                        {% for tag in post.tags %}
+                                        {% for tag in post.tags.posts %}
                                             <a href="#" class="mx-1">
                                                 #{{ tag }}
                                             </a>
