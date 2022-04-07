@@ -22,7 +22,7 @@
                             <h4 class="our-blog-post-title w-100">{{ post.title }}</h4>
                             <p class="our-blog-post-description px-3">{{ post.description|slice:'75' }}</p>
                             <hr style="width: 75%; margin-left: 12%">
-                            <a href="#" class="our-blog-post-btn w-100 my-5">Read more</a>
+                            <a href="{% url 'blogs:blog_detail' post.pk %}" class="our-blog-post-btn w-100 my-5">Read more</a>
                         </div>
                     </div>
                 </div>
