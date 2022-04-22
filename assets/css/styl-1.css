@@ -1,0 +1,1242 @@
+/* ===OPEN=== ===OPEN===  FONTS ROBOTO SELECT BEGIN  ===OPEN=== ===OPEN=== */
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/roboto-v29-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v29-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300italic - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: local(''),
+    url('../fonts/roboto-v29-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v29-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/roboto-v29-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v29-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500italic - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/roboto-v29-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v29-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+    url('../fonts/roboto-v29-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v29-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ===CLOSE=== ===CLOSE===  FONTS ROBOTO SELECT END  ===CLOSE=== ===CLOSE=== */
+
+
+/****************************************************************************************************/
+
+/* ===OPEN=== ===OPEN===  ACCOUNT PAGE CSS SECTION BEGIN ===OPEN=== ===OPEN=== */
+.login__item__div {
+    background-color: white;
+    width: 50%;
+    height: 600px;
+}
+
+.login__item__div:hover {
+    width: 50%;
+    height: 600px;
+    background-color: #d8ecec;
+    border: 1px solid #d8ecec;
+}
+
+.login__item__row {
+    margin-top: 17%;
+}
+
+.login__item__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 20px;
+    margin-top: 8%;
+    width: 100%;
+}
+
+.login__item__username {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.login__item__password {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.login__item__input__user {
+    width: 80%;
+    height: 48px;
+    border: 1px solid #d8ecec;
+    outline: none;
+}
+
+.login__item__input__password {
+    width: 80%;
+    height: 48px;
+    border: 1px solid #d8ecec;
+    outline: none;
+}
+
+.login__item__button__submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 50%;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+}
+
+.checkout__remember_me {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: silver;
+    cursor: pointer;
+}
+
+.checkout__forget_pass {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    width: 63%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1228px) {
+    .login__item__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        letter-spacing: 20px;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .login__item__username {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .login__item__password {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .login__item__button__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        letter-spacing: 2px;
+        width: 50%;
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .checkout__remember_me {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: silver;
+        cursor: pointer;
+    }
+
+    .checkout__forget_pass {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: black;
+        width: 63%;
+        cursor: pointer;
+        margin-right: 12%;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .login__item__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 20px;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .login__item__username {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .login__item__password {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .login__item__button__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 2px;
+        width: 50%;
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .checkout__remember_me {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: silver;
+        cursor: pointer;
+    }
+
+    .checkout__forget_pass {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .login__item__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        letter-spacing: 20px;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .login__item__username {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .login__item__password {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .login__item__button__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 2px;
+        width: 50%;
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .checkout__remember_me {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 9px;
+        color: silver;
+        cursor: pointer;
+    }
+
+    .checkout__forget_pass {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 9px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+/*REGISTER PAGE*/
+
+.register__item__div {
+    background-color: white;
+    width: 50%;
+    height: 650px;
+}
+
+.register__item__div:hover {
+    width: 50%;
+    height: 650px;
+    background-color: #d8ecec;
+    border: 1px solid #d8ecec;
+}
+
+.register__item__row {
+    margin-top: 17%;
+}
+
+.register__item__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 20px;
+    margin-top: 8%;
+    width: 100%;
+}
+
+.register__item__username {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.register__item__email__address {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.register__item__password {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.register__item__input__user {
+    width: 80%;
+    height: 48px;
+    border: 1px solid #d8ecec;
+    outline: none;
+}
+
+.register__item__input__email__address {
+    width: 80%;
+    height: 48px;
+    border: 1px solid #d8ecec;
+    outline: none;
+}
+
+.register__item__input__password {
+    width: 80%;
+    height: 48px;
+    border: 1px solid #d8ecec;
+    outline: none;
+}
+
+.register__item__button__submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 50%;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+}
+
+.checkout__input__checkbox1 {
+    margin-left: 13%;
+}
+
+.checkout__input__text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: silver;
+    cursor: pointer;
+}
+
+.checkout__input__text1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1228px) {
+    .register__item__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        letter-spacing: 20px;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .register__item__username {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__email__address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__password {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__button__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        letter-spacing: 2px;
+        width: 50%;
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .checkout__input__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: silver;
+        cursor: pointer;
+    }
+
+    .checkout__input__text1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1080px) {
+    .register__item__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 20px;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .register__item__username {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__email__address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__password {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__button__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 2px;
+        width: 50%;
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .checkout__input__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: silver;
+        cursor: pointer;
+    }
+
+    .checkout__input__text1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .register__item__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        letter-spacing: 20px;
+        margin-top: 8%;
+        width: 100%;
+    }
+
+    .register__item__username {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__email__address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__password {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .register__item__button__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 2px;
+        width: 50%;
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        outline: none;
+    }
+
+    .checkout__input__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 9px;
+        color: silver;
+        cursor: pointer;
+    }
+
+    .checkout__input__text1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 9px;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+/* ===CLOSE=== ===CLOSE===  ACCOUNT PAGE CSS SECTION END ===CLOSE=== ===CLOSE=== */
+
+
+/* ===OPEN=== ===OPEN===  ADD SHOPPING CART PAGE CSS SECTION BEGIN ===OPEN=== ===OPEN=== */
+.breadcrumb-option {
+    background: #f3f2ee;
+    padding: 40px 0;
+}
+
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.product__cart__item__pic {
+    width: 30%;
+}
+
+.add__shopping_cart_image {
+    width: 100%;
+}
+
+/*img {*/
+/*    max-width: 25%;*/
+/*}*/
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.shopping__cart__table table thead tr th {
+    color: #111111;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+th {
+    text-align: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.shopping__cart__table table tbody tr td.product__cart__item {
+    width: 400px;
+}
+
+.shopping__cart__table table tbody tr td {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.shopping__cart__table table tbody tr td.quantity__item {
+    width: 175px;
+}
+
+.shopping__cart__table table tbody tr td {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.shopping__cart__table table tbody tr td.cart__price {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 700;
+    width: 140px;
+}
+
+.shopping__cart__table table tbody tr td {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.shopping__cart__table table tbody tr td {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.continue__btn a {
+    color: #111111;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #e1e1e1;
+    padding: 14px 35px;
+    display: inline-block;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.continue__btn.update__btn a {
+    color: #ffffff;
+    background: #111111;
+    border-color: #111111;
+}
+
+.continue__btn a {
+    color: #111111;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #e1e1e1;
+    padding: 14px 35px;
+    display: inline-block;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.continue__btn.update__btn {
+    text-align: right;
+}
+
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.cart__discount h6 {
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+h6 {
+    display: block;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.cart__discount form input {
+    font-size: 14px;
+    color: #b7b7b7;
+    height: 50px;
+    width: 60%;
+    border: 1px solid #e1e1e1;
+    padding-left: 20px;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.shopping__cart_submit {
+    width: 25%;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border: none;
+}
+
+.cart__total {
+    background: #f3f2ee;
+    padding: 35px 40px 40px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.cart__total h6 {
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+h6 {
+    display: block;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+cart__total ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #444444;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.price_total {
+    font-family: sans-serif;
+    font-weight: 500;
+    color: red;
+}
+
+.cart__total .primary-btn {
+    display: block;
+    padding: 12px 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.primary-btn {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #000000;
+    letter-spacing: 4px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.primary-btn {
+    width: 100%;
+    border: none;
+}
+
+/* ===CLOSE=== ===CLOSE===  ADD SHOPPING CART CSS SECTION END ===CLOSE=== ===CLOSE=== */
+
+
+/* ===OPEN=== ===OPEN=== CHECKOUT PAGE CSS SECTION BEGIN ===OPEN=== ===OPEN=== */
+.breadcrumb-option {
+    background: #f3f2ee;
+    padding: 40px 0;
+}
+
+.check-out-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.coupon__code {
+    color: #0d0d0d;
+    font-size: 14px;
+    border-top: 2px solid #77b527;
+    background: #f5f5f5;
+    padding: 23px 30px 18px;
+    margin-bottom: 50px;
+}
+
+.checkout__title {
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.input-first_name {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-last_name {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-country {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-address {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-address1 {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+    margin-top: 4.8%;
+}
+
+.input-town_city {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-country_state {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-postcode_zip {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-phone {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-email {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-checkmark {
+    width: 17px;
+    height: 17px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-chacout-password {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-checkbox {
+    width: 17px;
+    height: 17px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.input-order_notes {
+    width: 100%;
+    height: 48px;
+    border: 1px solid silver;
+    outline: none;
+}
+
+.checkout__order {
+    background: #f3f2ee;
+    padding: 30px;
+}
+
+.checkout__order .order__title {
+    color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.total {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.checkout__order__products {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__totel__products-price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__total__all {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 15px 0;
+    margin-bottom: 26px;
+}
+
+.checkout__totel__price {
+    color: red;
+}
+
+.btn-div {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 48px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: 1px solid red;
+}
+
+@media (max-width: 1224px) {
+    .checkout__order .order__title {
+        color: #111111;
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 1px solid #d7d7d7;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+
+    .check-out-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .check-out-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .check-out-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .check-out-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+    }
+
+}
+
+/* ===CLOSE=== ===CLOSE===  CHECKOUT PAGE CSS SECTION END ===CLOSE=== ===CLOSE=== */

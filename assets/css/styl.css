@@ -76,7 +76,111 @@
     position: relative;
 }
 
+.black-box {
+    width: 100%;
+    height: 21px;
+    background-color: black;
+}
+
+.black-box-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
+
+@media (max-width: 1228px) {
+    .black-box-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+@media (max-width: 1080px) {
+    .black-box-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: white;
+    }
+}
+
+@media (max-width: 902px) {
+    .black-box-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .black-box-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 380px) {
+    .black-box-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 8px;
+        color: white;
+    }
+}
+
+.nav-search {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.nav-shopping__cart {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+#container {
+    margin: auto;
+    padding: 3em 0 0;
+    text-align: center;
+}
+
+#searchform {
+    display: inline;
+    font-size: 1em;
+    border-radius: 8em;
+    padding: 0.3em;
+}
+
+#s {
+    transition: all 0.2s ease-out;
+    width: 1px;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    opacity: 0;
+}
+
+#s:focus {
+    width: 8em;
+    opacity: 1;
+}
+
 /**/
+
 
 /* ==OPEN== ==OPEN==  INSTAGRAM FEED STYL SELECT BEGIN  ==OPEN== ==OPEN== */
 .header-instagram-icons {
@@ -240,8 +344,8 @@
 }
 
 .item-instagram-icons {
-    width: 35.7%;
-    height: 35.7%;
+    width: 37%;
+    height: 37%;
 }
 
 .instagram-feed {
@@ -998,7 +1102,7 @@
 .blog-emil-img {
     background-image: url("../img/newsletter-bg-2.jpg");
     width: 100%;
-    height: 500px;
+    height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1435,9 +1539,9 @@
 
 .footer-text {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 17px;
-    color: #b8b8bb;
+    color: white;
     border: 0px;
 }
 
@@ -1451,6 +1555,7 @@
 
 .img-icon-footer {
     width: 7.3%;
+    cursor: pointer;
 }
 
 .template-footer {
@@ -1470,9 +1575,9 @@
 
     .footer-text {
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 16px;
-        color: #b8b8bb;
+        color: white;
         border: 0px;
     }
 
@@ -1495,9 +1600,9 @@
 
     .footer-text {
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 14px;
-        color: #b8b8bb;
+        color: white;
         border: 0px;
     }
 
@@ -1520,9 +1625,9 @@
 
     .footer-text {
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 12px;
-        color: #b8b8bb;
+        color: white;
         border: 0px;
     }
 
@@ -1545,9 +1650,9 @@
 
     .footer-text {
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 12px;
-        color: #b8b8bb;
+        color: white;
         border: 0px;
     }
 
@@ -1590,10 +1695,11 @@
 }
 
 .item-shop-icon {
-    width: 18.1%;
-    height: 52%;
+    width: 16.5%;
+    height: 28%;
     position: absolute;
     background-color: rgba(0, 0, 0, .1);
+    margin-bottom: 7%;
     border-radius: 3px;
     display: none;
 }
@@ -1752,6 +1858,110 @@
         height: 38px;
     }
 }
+
+
+/**/
+.product__details__option {
+    margin-bottom: 30px;
+}
+
+.product__details__option__size {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.product__details__option__size span {
+    color: #111111;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.product__details__option__size label {
+    color: #111111;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    padding: 6px 15px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.product__details__option__size label.active {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+.product__details__option__size label input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.product__details__option__color {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.product__details__option__color span {
+    color: #111111;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: -9px;
+}
+
+.product__details__option__color label {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.product__details__option__color label.c-1 {
+    background: #0b090c;
+}
+
+.product__details__option__color label.c-2 {
+    background: #20315f;
+}
+
+.product__details__option__color label.c-3 {
+    background: #f1af4d;
+}
+
+.product__details__option__color label.c-4 {
+    background: #ed1c24;
+}
+
+.product__details__option__color label.c-9 {
+    background: #ffffff;
+}
+
+.product__details__option__color label:after {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    height: 36px;
+    width: 36px;
+    border: 1px solid #e5e5e5;
+    content: "";
+    border-radius: 50%;
+}
+
+.product__details__option__color label input {
+    position: absolute;
+    visibility: hidden;
+}
+
+/**/
 
 /* ===CLOSE=== ===CLOSE===  SHOP STYL SELECT END  ===CLOSE=== ===CLOSE=== */
 
@@ -2072,7 +2282,6 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 45px;
-    position: absolute;
     color: white;
     width: 100%;
 }
@@ -2288,7 +2497,6 @@
 /* ===CLOSE=== ===CLOSE===  OUR BLOG SELECT END  ===CLOSE=== ===CLOSE=== */
 
 
-
 /* ===OPEN=== ===OPEN===  ADD BLOG DETAILS SELECT BEGIN  ===OPEN=== ===OPEN=== */
 .blog_us-details-img {
     width: 80%;
@@ -2313,21 +2521,25 @@
 .instagram {
     width: 5.5%;
     height: 5.5%;
+    cursor: pointer;
 }
 
 .twitter {
     width: 5.5%;
     height: 5.5%;
+    cursor: pointer;
 }
 
 .facebook {
     width: 5.5%;
     height: 5.5%;
+    cursor: pointer;
 }
 
 .youtube {
     width: 5.5%;
     height: 5.5%;
+    cursor: pointer;
 }
 
 .blog_us-description {
@@ -2363,7 +2575,7 @@
 .blog-author-avatar {
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 100px;
 }
 
 .blog-author-full_name {
@@ -2443,9 +2655,12 @@
     height: 40px;
 }
 
-.input-text {
+.input-text1 {
     width: 93.8%;
     height: 100px;
+    border: 1px solid slategrey;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .site-btn {
@@ -2863,3 +3078,234 @@
 }
 
 /* ===CLOSE=== ===CLOSE===  ADD BLOG DETAILS SELECT END  ===CLOSE=== ===CLOSE=== */
+
+
+/******************************************************************************************************/
+
+
+/* ===CLOSE=== ===CLOSE===  CONTACTS PAGE CSS SELECT END  ===CLOSE=== ===CLOSE=== */
+
+.contact-page-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: red;
+}
+
+.contact-page-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.contact-name-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.contact-name-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.contact {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.contact-input-name {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #d3d4d7;
+}
+
+.contact-input-email {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #d3d4d7;
+}
+
+.contact-input-message {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d3d4d7;
+}
+
+.site-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    width: 250px;
+    height: 53px;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 1228px) {
+    .contact-page-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: red;
+    }
+
+    .contact-page-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 38px;
+    }
+
+    .contact-name-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .contact-name-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .site-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-page-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: red;
+    }
+
+    .contact-page-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    .contact-name-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .contact-name-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .site-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-page-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: red;
+    }
+
+    .contact-page-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 34px;
+    }
+
+    .contact-name-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .contact-name-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .site-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 561px) {
+    .contact-page-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+        color: red;
+    }
+
+    .contact-page-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+    }
+
+    .contact-name-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .contact-name-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 11px;
+    }
+
+    .site-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 323px) {
+    .contact-page-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 8px;
+        color: red;
+    }
+
+    .contact-page-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    .contact-name-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .contact-name-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+    }
+
+    .site-btn {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+    }
+}
+
+/* ===CLOSE=== ===CLOSE===  CONTACTS PAGE CSS SELECT END  ===CLOSE=== ===CLOSE=== */

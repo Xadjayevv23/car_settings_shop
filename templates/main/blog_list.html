@@ -4,14 +4,21 @@
 {% block content %}
     <!-- ==OPEN== ==OPEN==  OUR BLOG POST SELECT BEGIN  ==OPEN== ==OPEN== -->
     <div class="our-blog-img">
-        <div class="our-blog-posts-title position-relative">
+        <div class="our-blog-posts-title">
             <img class="w-100 h-50" src="{% static 'img/slider-thumb-full-2.jpg' %}">
-            <h1 class="blog-title position-absolute">Our Blog</h1>
         </div>
+        <h1 class="blog-title text-black">
+            {% if request.GET.tag %}
+                #{{ request.GET.tag }}
+            {% else %}
+                Our Blog
+            {% endif %}
+        </h1>
     </div>
     <div class="container">
         <div class="row d-flex justify-content-center">
             {% for post in posts %}
+                {% csrf_token %}
                 <div class="blog-col col-lg-3 col-md-6 col-sm-6 my-5 mx-3 h-75">
                     <div class="our-blog-post my-4">
                         <div class="our-blog-post-image d-flex justify-content-center h-50">
@@ -19,10 +26,11 @@
                         </div>
                         <div class="our-blog-post-text w-100 text-center">
                             <p class="our-blog-post-data w-100 my-2">{{ post.created_at|date:'d F Y' }}</p>
-                            <h4 class="our-blog-post-title w-100">{{ post.title }}</h4>
+                            <h4 class="our-blog-post-title w-100">{{ post.title|slice:'50' }}</h4>
                             <p class="our-blog-post-description px-3">{{ post.description|slice:'75' }}</p>
                             <hr style="width: 75%; margin-left: 12%">
-                            <a href="{% url 'blogs:blog_detail' post.pk %}" class="our-blog-post-btn w-100 my-5">Read more</a>
+                            <a href="{% url 'blogs:blog_detail' post.pk %}" class="our-blog-post-btn w-100 my-5">
+                                Read more</a>
                         </div>
                     </div>
                 </div>

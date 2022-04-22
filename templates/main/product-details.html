@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <!-- ==OPEN== ==OPEN==  ADD PRODUCT SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <div class="d-flex justify-content-center my-3">
+        <nav style=""
+             aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4">
+                <li class="breadcrumb-item"><a href="{% url 'pages:home' %}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:product' %}">Shop</a></li>
+                <li class="breadcrumb-item text-black active" aria-current="page">Product</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container d-flex justify-content-center mt-2 mb-5">
+        <div class="row add-products-details d-flex justify-content-center">
+            <div class="product-details col-lg-6 col-md-6 col-sm-12">
+                <div class="item-product-details-img d-flex flex-column justify-content-center">
+                    <img class="w-75 h-75" src="{{ object.image.url }}">
+                </div>
+            </div>
+            <div class="product-details-text col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                <div class="item-product-details-text w-75">
+                    <h3 class="item-product-details-title my-2">{{ object.name }}</h3>
+                    <p class="item-product-details-text my-2">Availability:<b>In Stock</b></p>
+                    <h4 class="item-product-details-price my-2">
+                        {% if object.is_discount %}
+                            {{ object.get_price }}
+                            <del>{{ object.price }}</del>
+                        {% else %}
+                            {{ object.price }}
+                        {% endif %}
+                    </h4>
+                    <ul class="item-product-details-line-text w-100 my-2">
+                        <li>Vestibulum tortor quam</li>
+                        <li>Imported</li>
+                        <li>Art.No. 06-7680</li>
+                    </ul>
+                    <div class="product__details__option my-3">
+                        <div class="product__details__option__size">
+                            <span>Size:</span>
+                            <label for="xxl">XXl
+                                <input type="radio" id="xxl">
+                            </label>
+                            <label class="active" for="xl">XL
+                                <input type="radio" id="xl">
+                            </label>
+                            <label for="l">M
+                                <input type="radio" id="l">
+                            </label>
+                            <label for="sm">S
+                                <input type="radio" id="sm">
+                            </label>
+                        </div>
+                        <div class="product__details__option__color my-3 ">
+                            <span>Color:</span>
+                            <label class="c-1" for="sp-1">
+                                <input type="radio" id="sp-1">
+                            </label>
+                            <label class="c-2" for="sp-2">
+                                <input type="radio" id="sp-2">
+                            </label>
+                            <label class="c-9" for="sp-9">
+                                <input type="radio" id="sp-9">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-details-input my-1">
+                        <form action="#">
+                            <input class="add-item-quantity mt-4" type="number" id="quantity" name="quantity" value="1"
+                                   min="1" max="7">
+                            <button class="input-button btn btn-danger mb-1" type="submit">Add To Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="">
+            <div class="item-product-description-title text-center mt-4 mb-3 w-100">
+                <h4 class="description-title w-100">Product Description </h4>
+            </div>
+            <div class="item-product-details-description d-flex justify-content-center w-100">
+                <p class="description-text my-3">
+                    {{ object.description }}
+                </p>
+            </div>
+            <hr class="mx-auto" style="width: 40%">
+            <div class="product-tag-category d-flex justify-content-center">
+                <div class="product__details__last__option d-flex flex-column">
+                    <p><span class="mx-2">Categories:</span>{{ object.category }}</p>
+                    <p><span class="mx-2">Tag:</span>
+                        {% for tag in object.tag.all %}
+                            {% csrf_token %}
+                            #{{ tag }}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="px-5 mt-2 mb-5">
+            <div class="row">
+                <div class="product-blog-title text-center w-100">
+                    <h4 class="product-blog-text">Additional Products</h4>
+                </div>
+                <div class="responsive">
+                    {% for p in object.get_related %}
+                        <div class="item-product d-flex flex-column mx-3">
+                            <div class="item-product-img position-relative w-100">
+                                <img class="product-img position-absolute h-100 w-100"
+                                     src="{{ p.image.url }}">
+                                <div class="item-product-icon flex-column">
+                                    <a href="#" class="product-btn btn btn-danger mx-2 my-3">
+                                        <img class="item-product-shopping mx-auto"
+                                             src="{% static 'icons/shopping-cart-outline-svgrepo-com.svg' %}">
+                                    </a>
+                                    <a href="{% url 'products:product-details' p.pk %}"
+                                       class="product-btn btn btn-danger btn mx-2 my-2">
+                                        <img class="item-product-shopping mx-0 px-0"
+                                             src="{% static 'icons/search-svgrepo-com.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-product-text mt-4 ">
+                                <h4 class="product_title text-center">{{ p.name }}</h4>
+                                <span class="d-flex justify-content-center my-4 w-100">
+                        <del class="product_del_price mx-3">${{ p.get_price }}</del>
+                        <h5 class="product_price">$97</h5>
+                    </span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==CLOSE== ==CLOSE==  ADD PRODUCT SELECT END  ==CLOSE== ==CLOSE== -->
+{% endblock %}

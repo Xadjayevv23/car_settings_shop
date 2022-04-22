@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ==OPEN== ==OPEN==  SHOPPING CART SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shopping Cart</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <span>Shopping Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Shopping Cart Section Begin -->
+    <section class="shopping-cart spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="shopping__cart__table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="product__cart__item d-flex">
+                                    <div class="product__cart__item__pic d-flex justify-content-start">
+                                        <img class="add__shopping_cart_image img-fluid" src="../img/product-item-13.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__cart__item__text my-auto">
+                                        <h6>T-shirt Contrast Pocket</h6>
+                                        <h5>$98.49</h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty-2">
+                                            <div class="form-details-input my-1">
+                                                <form action="#">
+                                                    <input class="text-center" type="number" id="quantity"
+                                                           name="quantity"
+                                                           value="1" min="1"
+                                                           max="7">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">$ 30.00</td>
+                                <td class="cart__close"><img src=""></td>
+                            </tr>
+                            <tr>
+                                <td class="product__cart__item d-flex">
+                                    <div class="product__cart__item__pic">
+                                        <img class="add__shopping_cart_image img-fluid" src="../img/product-item-13.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__cart__item__text my-auto">
+                                        <h6>T-shirt Contrast Pocket</h6>
+                                        <h5>$98.49</h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty-2">
+                                            <div class="form-details-input my-1">
+                                                <form action="#">
+                                                    <input class="text-center" type="number" id="quantity"
+                                                           name="quantity"
+                                                           value="1" min="1"
+                                                           max="7">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">$ 30.00</td>
+                                <td class="cart__close"><img src=""></td>
+                            </tr>
+                            <tr>
+                                <td class="product__cart__item d-flex">
+                                    <div class="product__cart__item__pic">
+                                        <img class="add__shopping_cart_image img-fluid" src="../img/product-item-13.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__cart__item__text my-auto">
+                                        <h6>T-shirt Contrast Pocket</h6>
+                                        <h5>$98.49</h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty-2">
+                                            <div class="form-details-input my-1">
+                                                <form action="#">
+                                                    <input class="text-center" type="number" id="quantity"
+                                                           name="quantity"
+                                                           value="1" min="1"
+                                                           max="7">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">$ 30.00</td>
+                                <td class="cart__close"><img src=""></td>
+                            </tr>
+                            <tr>
+                                <td class="product__cart__item d-flex">
+                                    <div class="product__cart__item__pic">
+                                        <img class="add__shopping_cart_image img-fluid" src="../img/product-item-13.jpg"
+                                             alt="">
+                                    </div>
+                                    <div class="product__cart__item__text my-auto">
+                                        <h6>T-shirt Contrast Pocket</h6>
+                                        <h5>$98.49</h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty-2">
+                                            <div class="form-details-input my-1">
+                                                <form action="#">
+                                                    <input class="text-center" type="number" id="quantity"
+                                                           name="quantity"
+                                                           value="1" min="1"
+                                                           max="7">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">$ 30.00</td>
+                                <td class="cart__close"><img src=""></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn">
+                                <a href="#">Continue Shopping</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="continue__btn update__btn">
+                                <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart__discount">
+                        <h6>Discount codes</h6>
+                        <form action="#">
+                            <input type="text" placeholder="Coupon code">
+                            <a>
+                                <button class="shopping__cart_submit" type="submit">Apply</button>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="cart__total my-4">
+                        <h6>Cart total</h6>
+                        <div class="mx-0 px-0 my-4">
+                            <p class="d-flex justify-content-between my-2">Subtotal <span
+                                    class="price_total">$ 169.50</span></p>
+                            <p class="d-flex justify-content-between my-2">Total <span
+                                    class="price_total">$ 169.50</span></p>
+                        </div>
+                        <button href="#" type="submit" class="primary-btn">Proceed to checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shopping Cart Section End -->
+
+    <!-- ==CLOSE== ==CLOSE==  SHOPPING CART SELECT END  ==CLOSE== ==CLOSE== -->
+{% endblock %}

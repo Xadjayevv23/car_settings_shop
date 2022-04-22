@@ -17,49 +17,22 @@
     <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick.css' %}">
     <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick-theme.css' %}">
     <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styl-1.css' %}">
     <!-- ==OPEN== ==OPEN==  CSS LINK STYL SELECT END  ==CLOSE== ==CLOSE== -->
 
 </head>
 <body>
 
-<!-- ==OPEN== ==OPEN==  NAVBAR SELECT BEGIN  ==OPEN== ==OPEN== -->
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img class="mx-4" src="{% static 'img/logo.png' %}"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-5">
-                        <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"><b>Home</b></a>
-                    </li>
-                    <li class="nav-item mx-5">
-                        <a class="nav-link active" href="#"><b>Shop</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'blogs:blog_list' %}"><b>Blog</b></a>
-                    </li>
-                    <li class="nav-item mx-5">
-                        <a class="nav-link active" href="#"><b>Contacts</b></a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                </form>
-            </div>
-        </div>
-    </nav>
+<!--==OPEN== ==OPEN==  BLACK-BOX SELECT BEGIN  ==OPEN== ==OPEN== -->
+<div class="black-box text-center">
+    <p class="black-box-text my-auto w-100">Free shopping, 30-days return of refund guarantee</p>
 </div>
-<!-- ==CLOSE== ==CLOSE==  NAVBAR SELECT END  ==CLOSE== ==CLOSE== -->
+<!--==CLOSE== ==CLOSE==  BLACK-BOX SELECT END  ==CLOSE== ==CLOSE== -->
 
+{% include 'layouts/navbar.html' %}
+{% block content %}
 
-
-    {% block content %}
-
-    {% endblock %}
+{% endblock %}
 
 <!--==OPEN== ==OPEN==  FOOTER POST SELECT BEGIN  ==OPEN== ==OPEN== -->
 <div class="container-fluid footer h-50">
@@ -135,6 +108,7 @@
 <!-- ==OPEN== ==OPEN==  JS SCRIPT STYL SELECT BEGIN  ==OPEN== ==OPEN== -->
 <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
 <script src="{% static 'slick-1.8.1/slick/slick.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
 <script src="{% static 'js/styl.js' %}"></script>
 <!-- ==CLOSE== ==CLOSE==  JS SCRIPT STYL SELECT END  ==CLOSE== ==CLOSE== -->
 

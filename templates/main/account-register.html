@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ==OPEN== ==OPEN==  ACCOUNT REGISTER PAGE SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <div class="register__page">
+        <div class="container">
+            <div class="register__item__row row d-flex justify-content-center">
+                <div class="register__item__div col-sm-8">
+                    <div class="register__item__title d-flex justify-content-center">
+                        <p>Register</p>
+                    </div>
+                    <div class="register__item__page text-center">
+                        <form action="">
+                            <div class="my-4">
+                                <p class="register__item__username">UserName<span>*</span></p>
+                                <input class="register__item__input__user px-3" type="text"
+                                       name="name" placeholder="User name">
+                            </div>
+                            <div class="my-4">
+                                <p class="register__item__email__address">Email address<span>*</span></p>
+                                <input class="register__item__input__email__address px-3" type="text"
+                                       name="email" placeholder="Email address">
+                            </div>
+                            <div>
+                                <p class="register__item__password">Password<span>*</span></p>
+                                <input class="register__item__input__password px-3" type="text"
+                                       name="password" placeholder="Password">
+                            </div>
+                            <div class="checkout__input__checkbox1 my-4">
+                                <label for="acc" class="mb-3 w-100 d-flex justify-content-start">
+                                    <input class="input-checkmark mt-1" type="checkbox" id="acc">
+                                    <span class="checkmark mx-2"></span>
+                                    <p class="checkout__input__text">I agree to
+                                        <span class="checkout__input__text1 px-1"> Terms & Conditions</span>
+                                    </p>
+                                </label>
+                            </div>
+                            <div>
+                                <button class="register__item__button__submit" type="submit">Register New</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==CLOSE== ==CLOSE==  ACCOUNT REGISTER PAGE SELECT END  ==CLOSE== ==CLOSE== -->
+{% endblock %}

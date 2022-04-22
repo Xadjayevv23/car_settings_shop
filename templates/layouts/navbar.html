@@ -1,0 +1,48 @@
+{% load static %}
+<!-- ==OPEN== ==OPEN==  NAVBAR SELECT BEGIN  ==OPEN== ==OPEN== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img class="logo mx-4" src="{% static 'img/logo.png' %}"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item mx-4 py-2">
+                    <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"><b>Home</b></a>
+                </li>
+                <li class="nav-item mx-4 py-2">
+                    <a class="nav-link active" href="{% url 'products:product' %}"><b>Shop</b></a>
+                </li>
+                <li class="nav-item mx-4 py-2">
+                    <a class="nav-link active" href="{% url 'blogs:blog_list' %}"><b>Blog</b></a>
+                </li>
+                <li class="nav-item mx-4 py-2">
+                    <a class="nav-link active" href="{% url 'pages:contact' %}"><b>Contacts</b></a>
+                </li>
+                <li class="nav-item mx-2 py-2 mx-5">
+                    <a class="nav-link active text-danger px-4 py-2" href=""><b>Login</b></a>
+                </li>
+                <li class="nav-item mx-2 py-2">
+                    <a class="nav-link active text-danger" href=""><b>Register</b></a>
+                </li>
+            </ul>
+            <div id="container" class="pt-2 d-flex">
+                <form role="search" method="get" id="searchform" action="">
+                    <label for="s" class="my-0 py-0">
+                        <img class="nav-search my-0 py-0" src="{% static 'img/icons8-search.svg' %}">
+                    </label>
+                    <input type="text" value="" placeholder="search" class="" id="s"/>
+                </form>
+                <div class="d-flex pt-1 mx-2">
+                    <a href="shopping-cart.html"><img class="nav-shopping__cart"
+                                     src="{% static 'icons/shopping-cart-outline-svgrepo-com.svg' %}" alt=""></a>
+                    <div class="price px-1 my-auto">$0.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- ==CLOSE== ==CLOSE==  NAVBAR SELECT END  ==CLOSE== ==CLOSE== -->

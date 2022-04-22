@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- ==OPEN== ==OPEN==  CONTACTS PAGE SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <!-- Map Begin -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111551.9926412813!2d-90.27317134641879!3d38.
+        606612219170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnit
+        ed%20States!5e0!3m2!1sen!2sbd!4v1597926938024!5m2!1sen!2sbd"
+                height="500" width="100%" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+    </div>
+    <!-- Map End -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__text">
+                        <div class="section-title">
+                            <span class="contact-page-name">Information</span>
+                            <h2 class="contact-page-title my-3">Contact Us</h2>
+                            <p class="contact-name-text w-75">
+                                As you might expect of a company that began as a high-end
+                                interiors
+                                contractor, we pay
+                                strict attention.
+                            </p>
+                        </div>
+                        <div class="w-100">
+                            <p>
+                                <h4 class="contact-name-title my-2">
+                                    America
+                                </h4>
+                                <p class="contact-name-text">
+                                    195 E Parker Square Dr, Parker, CO 801 <br/>+43 982-314-0958
+                                </p>
+                            </p>
+                            <p>
+                                <h4 class="contact-name-title my-2">
+                                    France
+                                </h4>
+                                <p class="contact-name-text ">
+                                    109 Avenue Léon, 63 Clermont-Ferrand <br/>+12 345-423-9893
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__form">
+                        <form action="{% url 'pages:contact' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 my-2">
+                                    <input class="contact-input-name px-4" type="text" name="name" placeholder="Name">
+                                </div>
+                                <div class="col-lg-6 my-2">
+                                    <input class="contact-input-email px-4" type="text" name="email"
+                                           placeholder="Email">
+                                </div>
+                                <div class="message-div my-4 col-lg-12">
+                                    <textarea class="contact-input-message px-4 py-3" name="message"
+                                              placeholder="Message"></textarea>
+                                    <div class="my-2">
+                                        <button type="submit" class="site-btn">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==CLOSE== ==CLOSE==   CONTACTS PAGE SELECT END  ==CLOSE== ==CLOSE== -->
+{% endblock %}
