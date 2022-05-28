@@ -1695,8 +1695,8 @@
 }
 
 .item-shop-icon {
-    width: 16.5%;
-    height: 28%;
+    width: 16%;
+    height: 28.5%;
     position: absolute;
     background-color: rgba(0, 0, 0, .1);
     margin-bottom: 7%;
@@ -1962,6 +1962,55 @@
 }
 
 /**/
+.prod-color {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #e5e5e5;
+    content: "";
+    border-radius: 50%;
+}
+
+.shop__product__option__right {
+    text-align: right;
+}
+
+.shop__product__option__right p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.shop__product__option__right .nice-select {
+    float: none;
+    display: inline-block;
+    padding: 0;
+    line-height: 26px;
+    height: auto;
+    border: none;
+    padding-right: 28px;
+}
+
+.shop__product__option__right .nice-select:after {
+    border-bottom: 1.5px solid #111111;
+    border-right: 1.5px solid #111111;
+    height: 8px;
+    right: 12px;
+    width: 8px;
+}
+
+.shop__product__option__right .nice-select span {
+    color: #111111;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.shop__product__option__right .nice-select .list {
+    border-radius: 0;
+}
+
+.shop__sort {
+    background-color: #dcdbdb;
+    border: 0px solid;
+}
 
 /* ===CLOSE=== ===CLOSE===  SHOP STYL SELECT END  ===CLOSE=== ===CLOSE=== */
 

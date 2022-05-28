@@ -1,0 +1,96 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Log in" %}{% endblock %}
+
+{% block content %}
+    <div class="login__page">
+        <div class="container">
+            <div class="login__item__row row d-flex justify-content-center">
+                <div class="login__item__div col-sm-8">
+                    <div class="login__item__title d-flex justify-content-center">
+                        <p>LOGIN</p>
+                    </div>
+                    <div class="login__item__page text-center">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <div class="my-4">
+                                <p for="username" id="username" class="login__item__username">UserName<span>*</span></p>
+                                <input class="login__item__input__user px-3" type="text"
+                                       name="username" placeholder="Your Username">
+                            </div>
+                            <div>
+                                <p for="password" id="password" class="login__item__password">Password<span>*</span><p/>
+                                <input class="login__item__input__password px-3" type="password"
+                                       name="password" placeholder="Your  Password">
+                            </div>
+                            <div class="checkout__input__checkbox1 my-4">
+                                <label for="acc" class="mb-3 w-100 d-flex justify-content-start">
+                                    <input class="input-checkmark mt-1" type="checkbox" id="acc">
+                                    <span class="checkmark mx-2"></span>
+                                    <p class="checkout__remember_me d-flex justify-content-between">Remember me</p>
+                                    <span class="checkout__forget_pass d-flex justify-content-center"><a
+                                            href="{% url 'auth_password_reset' %}">{% trans 'Forgot Password' %}</a></span>
+                                    <span class="checkout__forget_pass d-flex"><a
+                                            href="{% url 'registration_register' %}">{% trans 'Registration' %}</a></span>
+                                </label>
+                            </div>
+                            <div class="my-5">
+                                <button class="login__item__button__submit" value="{% trans 'Log in' %}" type="submit">
+                                    Login
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+<div class="login__page">
+    <div class="container">
+        <div class="login__item__row row d-flex justify-content-center">
+            <div class="login__item__div col-sm-8">
+                <div class="login__item__title d-flex justify-content-center">
+                    <p>LOGIN</p>
+                </div>
+                <div class="login__item__page text-center">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="my-4">
+                            <p class="login__item__username">UserName<span>*</span></p>
+                            <input class="login__item__input__user px-3" type="text"
+                                   name="username" placeholder="User name">
+                        </div>
+                        <div>
+                            <p class="login__item__password">Password<span>*</span></p>
+                            <input class="login__item__input__password px-3" type="text"
+                                   name="password" placeholder="Password">
+                        </div>
+                        <div class="checkout__input__checkbox1 my-4">
+                            <label for="acc" class="mb-3 w-100 d-flex justify-content-start">
+                                <input class="input-checkmark mt-1" type="checkbox" id="acc">
+                                <span class="checkmark mx-2"></span>
+                                <p class="checkout__remember_me">Remember me</p>
+                                <span class="checkout__forget_pass d-flex justify-content-end"><a
+                                        href="{% url 'auth_password_reset' %}">{% trans 'Forgot Password' %}</a></span>
+                                <span class="checkout__forget_pass d-flex justify-content-end"><a
+                                        href="{% url 'registration_register' %}">{% trans 'Registration' %}</a></span>
+                            </label>
+                        </div>
+                        <div class="my-5">
+                            <button class="login__item__button__submit" value="{% trans 'Log in' %}" type="submit">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,43 @@
+{#{% extends "base.html" %}#}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==OPEN== ==OPEN==  META TAGS SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==CLOSE== ==CLOSE==  META TAGS SELECT END  ==CLOSE== ==CLOSE== -->
+
+    <title>Title</title>
+
+    <!-- ==OPEN== ==OPEN==  CSS LINK STYL SELECT BEGIN  ==OPEN== ==OPEN== -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styl-1.css' %}">
+    {% block extra_css %}
+    {% endblock %}
+    <!-- ==OPEN== ==OPEN==  CSS LINK STYL SELECT END  ==CLOSE== ==CLOSE== -->
+
+</head>
+<body>
+
+{% block content %}
+
+{% endblock %}
+
+
+<!-- ==OPEN== ==OPEN==  JS SCRIPT STYL SELECT BEGIN  ==OPEN== ==OPEN== -->
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'slick-1.8.1/slick/slick.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'js/styl.js' %}"></script>
+<!-- ==CLOSE== ==CLOSE==  JS SCRIPT STYL SELECT END  ==CLOSE== ==CLOSE== -->
+
+</body>
+</html>

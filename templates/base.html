@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{% static 'slick-1.8.1/slick/slick-theme.css' %}">
     <link rel="stylesheet" href="{% static 'css/styl.css' %}">
     <link rel="stylesheet" href="{% static 'css/styl-1.css' %}">
+    {% block extra_css %}
+    {% endblock %}
     <!-- ==OPEN== ==OPEN==  CSS LINK STYL SELECT END  ==CLOSE== ==CLOSE== -->
 
 </head>
@@ -110,6 +112,8 @@
 <script src="{% static 'slick-1.8.1/slick/slick.min.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
 <script src="{% static 'js/styl.js' %}"></script>
+{% block extra_js %}
+{% endblock %}
 <!-- ==CLOSE== ==CLOSE==  JS SCRIPT STYL SELECT END  ==CLOSE== ==CLOSE== -->
 
 </body>

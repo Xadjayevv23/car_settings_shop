@@ -41,30 +41,19 @@
                     <div class="product__details__option my-3">
                         <div class="product__details__option__size">
                             <span>Size:</span>
-                            <label for="xxl">XXl
-                                <input type="radio" id="xxl">
-                            </label>
-                            <label class="active" for="xl">XL
-                                <input type="radio" id="xl">
-                            </label>
-                            <label for="l">M
-                                <input type="radio" id="l">
-                            </label>
-                            <label for="sm">S
-                                <input type="radio" id="sm">
-                            </label>
+                            {% for size in sizes %}
+                                <label for="{{ size }}">{{ size }}
+                                    <a id="{{ size }}">
+                                </label>
+                            {% endfor %}
                         </div>
                         <div class="product__details__option__color my-3 ">
                             <span>Color:</span>
-                            <label class="c-1" for="sp-1">
-                                <input type="radio" id="sp-1">
-                            </label>
-                            <label class="c-2" for="sp-2">
-                                <input type="radio" id="sp-2">
-                            </label>
-                            <label class="c-9" for="sp-9">
-                                <input type="radio" id="sp-9">
-                            </label>
+                            {% for color in colors %}
+                                <label style="background: {{ color }}" for="{{ color.pk }}">
+                                    <input type="radio" id="{{ color.pk }}">
+                                </label>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="form-details-input my-1">
@@ -94,7 +83,6 @@
                     <p><span class="mx-2">Categories:</span>{{ object.category }}</p>
                     <p><span class="mx-2">Tag:</span>
                         {% for tag in object.tag.all %}
-                            {% csrf_token %}
                             #{{ tag }}
                         {% endfor %}
                     </p>

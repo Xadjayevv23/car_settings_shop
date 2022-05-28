@@ -1,8 +1,11 @@
 {% load static %}
+{% load my_tags %}
+{% load i18n %}
+
 <!-- ==OPEN== ==OPEN==  NAVBAR SELECT BEGIN  ==OPEN== ==OPEN== -->
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container">
-        <a class="navbar-brand" href="#"><img class="logo mx-4" src="{% static 'img/logo.png' %}"></a>
+        <a class="navbar-brand" href="#"><img class="logo mx-4" src="{% static 'img/logo_23.png' %}"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,35 +14,51 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item mx-4 py-2">
-                    <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"><b>Home</b></a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"><b>{% trans 'Home' %}</b></a>
                 </li>
                 <li class="nav-item mx-4 py-2">
-                    <a class="nav-link active" href="{% url 'products:product' %}"><b>Shop</b></a>
+                    <a class="nav-link active" href="{% url 'products:product' %}"><b>{% trans 'Shop' %}</b></a>
                 </li>
                 <li class="nav-item mx-4 py-2">
-                    <a class="nav-link active" href="{% url 'blogs:blog_list' %}"><b>Blog</b></a>
+                    <a class="nav-link active" href="{% url 'blogs:blog_list' %}"><b>{% trans 'Blog' %}</b></a>
                 </li>
                 <li class="nav-item mx-4 py-2">
-                    <a class="nav-link active" href="{% url 'pages:contact' %}"><b>Contacts</b></a>
+                    <a class="nav-link active" href="{% url 'pages:contact' %}"><b>{% trans 'Contacts' %}</b></a>
                 </li>
-                <li class="nav-item mx-2 py-2 mx-5">
-                    <a class="nav-link active text-danger px-4 py-2" href=""><b>Login</b></a>
-                </li>
-                <li class="nav-item mx-2 py-2">
-                    <a class="nav-link active text-danger" href=""><b>Register</b></a>
+                <li class="nav-item py-2 mx-5">
+                    {% if request.user.is_authenticated %}
+                        <a class="nav-link active text-danger py-2 w-100"
+                           href="{% url 'auth_logout' %}"><b>{% trans 'Log out' %}
+                        </b></a>
+                    {% else %}
+                        <a class="nav-link active text-danger py-2"
+                           href="{% url 'auth_login' %}"><b>{% trans 'Sign in' %}
+                        </b></a>
+                    {% endif %}
                 </li>
             </ul>
             <div id="container" class="pt-2 d-flex">
-                <form role="search" method="get" id="searchform" action="">
+                <form method="get" id="searchform" action="{% url 'products:product' %}">
+                    {% csrf_token %}
                     <label for="s" class="my-0 py-0">
                         <img class="nav-search my-0 py-0" src="{% static 'img/icons8-search.svg' %}">
                     </label>
-                    <input type="text" value="" placeholder="search" class="" id="s"/>
+                    <input type="text" name="q" value="{{ request.GET.q }}" placeholder="search" class="" id="s">
                 </form>
                 <div class="d-flex pt-1 mx-2">
-                    <a href="shopping-cart.html"><img class="nav-shopping__cart"
-                                     src="{% static 'icons/shopping-cart-outline-svgrepo-com.svg' %}" alt=""></a>
-                    <div class="price px-1 my-auto">$0.00</div>
+                    <a href="{% url 'pages:shopping-cart' %}"><img class="nav-shopping__cart"
+                                                                   src="{% static 'icons/shopping-cart-outline-svgrepo-com.svg' %}"
+                                                                   alt=""><span>{{ cart_info.0 }}</span></a>
+                    <div class="price px-1 my-auto">${{ cart_info.1 }}</div>
+                </div>
+                <div class="col-md-4 col-lg-4 text-end my-auto">
+                    <div class="shop__product__option__right mx-4">
+                        <select class="shop__sort bg-warning">
+                            <option value="">ENG</option>
+                            <option value="">RUS</option>
+                            <option value="">UZB</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
